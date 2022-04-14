@@ -15,7 +15,7 @@ html {
 
 .hero-section {
     margin-top: 46px !important;
-    background-image: url("https://images.unsplash.com/photo-1576220258822-153014832245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80");
+    background-image: url("img/main-bg.jpg");
     background-repeat: no-repeat;
     box-sizing: border-box;
 }
@@ -59,20 +59,6 @@ html {
     padding: 3px;
 }
 
-roduct-right-side-2 {
-    height: 337px;
-    width: 400px;
-    margin-top: 8px;
-    overflow: hidden;
-}
-
-.product-right-side-2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-}
-
 .contact {
     padding: 40px 0px;
     width: 60%;
@@ -88,47 +74,7 @@ roduct-right-side-2 {
     overflow-x: hidden;
 }
 
-.product-list {
-    width: 80% !important;
-    margin: auto;
-    overflow: hidden;
-}
-
-.new-arrived-products {
-    display: flex !important;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    grid-row-gap: 60px;
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.new-product {
-    height: 445px;
-    color: gray;
-}
-
-.price {
-    color: black;
-    font-weight: 600;
-    margin-top: 8px;
-}
-
-.new-arrived-image {
-    width: 300px !important;
-    height: 300px !important;
-    overflow: hidden;
-}
-
-.new-arrived-image img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
-}
-
-.feedback {
+.about-us-container {
     width: 70%;
     margin: auto;
 }
@@ -139,34 +85,15 @@ roduct-right-side-2 {
 }
 
 .card {
-    width: 380px;
+    width: 3080px;
     padding: 20px;
     border-radius: 10px;
     margin: 15px;
     background-color: white;
-    height: 150px;
+    height: 300px;
     box-shadow: 2px 7px 20px -5px rgba(0, 0, 0, 0.57);
     -webkit-box-shadow: 2px 7px 20px -5px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 2px 7px 20px -5px rgba(0, 0, 0, 0.57);
-}
-
-.customer-profile {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.customer-feedback-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.customer-profile img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
-    border-radius: 50%;
 }
 
 .list-button {
@@ -198,6 +125,13 @@ roduct-right-side-2 {
     border-radius: 16px;
 }
 
+.img-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 div.gallery {
     border: 1px solid #ccc;
     border-radius: 16px;
@@ -222,6 +156,21 @@ div.desc {
     box-sizing: border-box;
 }
 
+div.event-gallery {
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
+
+div.event-gallery:hover {
+    border: 1px solid #777;
+}
+
+div.event-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
 .responsive {
     margin-top: 10px;
     padding: 0 6px;
@@ -231,9 +180,9 @@ div.desc {
 
 /*medium screens - Laptops*/
 
-@media screen and (max-width: 1056px) {
+@media screen and (max-width: 1199px) {
     .hero-section {
-        background-image: url("https://images.unsplash.com/photo-1576220258822-153014832245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80");
+        background-image: url("img/main-bg.jpg");
         background-repeat: no-repeat;
     }
 
@@ -241,7 +190,7 @@ div.desc {
         width: 90% !important;
     }
 
-    .feedback {
+    .about-us-container {
         width: 90%;
         margin: auto;
     }
@@ -267,7 +216,7 @@ div.desc {
         width: 80% !important;
     }
 
-    .feedback {
+    .about-us-container {
         width: 70%;
         margin: auto;
     }
@@ -275,11 +224,6 @@ div.desc {
     .products {
         width: 70%;
         margin: auto;
-    }
-
-    .product-list {
-        display: flex;
-        justify-content: space-between;
     }
 
     .hero-section-main {
@@ -293,7 +237,7 @@ div.desc {
     }
 
     .hero-section {
-        background-image: url("https://images.unsplash.com/photo-1576220258822-153014832245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80");
+        background-image: url("img/main-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         margin: auto;
@@ -311,30 +255,21 @@ div.desc {
 
     .responsive {
         margin-top: 10px;
-        padding: 0 6px;
-        float: right;
-        width: 25%;
+        padding: 0 5px;
+        float: left;
+        width: 30%;
     }
 
-}
-
-@media screen and (min-width: 1920px) {
-    .responsive {
-        margin-top: 10px;
-        padding: 0 6px;
-        float: right;
-        width: 25%;
-    }
 }
 
 /*Small screens - tablets*/
 @media screen and (min-width:481px) and (max-width: 768px) {
-    .feedback {
+    .about-us-container {
         width: 90%;
         margin: auto
     }
 
-    .Customer-feedback {
+    .about-us-text {
         justify-content: center !important;
     }
 
@@ -343,20 +278,9 @@ div.desc {
         margin: auto !important;
     }
 
-    .new-arrived-image {
-        width: 250px !important;
-        height: 300px !important;
-    }
-
-    .new-arrived-image img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover;
-    }
-
     .hero-section {
         margin-top: 50px;
-        background-image: url("https://images.unsplash.com/photo-1576220258822-153014832245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80");
+        background-image: url("img/main-bg.jpg");
         background-repeat: no-repeat;
     }
 
@@ -386,39 +310,6 @@ div.desc {
         margin: auto;
     }
 
-    .product-left-side {
-        width: 500px !important;
-        height: 540px;
-        margin: auto !important;
-    }
-
-    .product-left-side img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .product-right-side {
-        width: 500px;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-row-gap: 10px;
-    }
-
-
-
-    .product-right-side-2 {
-        height: 540px !important;
-        width: 500px !important;
-    }
-
-    .product-right-side-2 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-
     .contact {
         margin-top: 50px !important;
         width: 85% !important;
@@ -445,6 +336,18 @@ div.desc {
         width: 49.99999%;
         margin: 6px 0;
     }
+
+    .card {
+        width: 3080px;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 15px;
+        background-color: white;
+        height: 400px;
+        box-shadow: 2px 7px 20px -5px rgba(0, 0, 0, 0.57);
+        -webkit-box-shadow: 2px 7px 20px -5px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 2px 7px 20px -5px rgba(0, 0, 0, 0.57);
+    }
 }
 
 
@@ -459,7 +362,7 @@ div.desc {
 
     .hero-section {
         margin-top: 50px;
-        background-image: url("https://images.unsplash.com/photo-1576220258822-153014832245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80") !important;
+        background-image: url("img/main-bg.jpg") !important;
         background-repeat: no-repeat;
         overflow-x: hidden;
         overflow-y: scroll;
@@ -488,44 +391,6 @@ div.desc {
         height: 2000px !important;
     }
 
-    .product-list {
-        display: flex !important;
-        flex-direction: column;
-    }
-
-    .product-left-side {
-        width: 300px !important;
-        height: 350px !important;
-        margin-top: 40px;
-        overflow: hidden;
-    }
-
-    .product-left-side img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover;
-    }
-
-    .product-right-side {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-
-    .product-right-side-2 {
-        height: 350px !important;
-        width: 300px !important;
-        margin-top: 40px !important;
-    }
-
-    .product-right-side-2 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-
     .section-text-header {
         width: 300px !important;
         margin: 40px 0px !important;
@@ -536,30 +401,9 @@ div.desc {
         font-weight: 600;
     }
 
-    .new-product {
-        border-bottom: 1px solid gray;
-        padding-bottom: 50px;
-        height: 420px;
-    }
-
-    .new-arrived-image {
-        width: 230px !important;
-        height: 240px !important;
-    }
-
-    .new-arrived-image img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover;
-    }
-
-    .feedback {
+    .about-us-container {
         width: 90%;
         margin: auto;
-    }
-
-    .Customer-feedback {
-        justify-content: center !important;
     }
 
     .contact-info {
@@ -609,14 +453,14 @@ input[type=password] {
     background: #f1f1f1;
 }
 
-/* Add a background color when the inputs get focus */
+/* background color when the inputs get focus */
 input[type=text]:focus,
 input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
 
-/* Set a style for all buttons */
+/* style for all buttons */
 button {
     background-color: #04AA6D;
     color: white;
@@ -656,40 +500,18 @@ button:hover {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* The Modal (background) */
-/* .modal {
-    display: none;
-    /* Hidden by default *
-    position: absolute;
-    /* Stay in place *
-    z-index: 1;
-    /* Sit on top *
-    left: 50%;
-    top: 25%;
-    width: 500px;
-    /* Full width *
-    height: 600px;
-    /* Full height *
-    overflow: none;
-    /* Enable scroll if needed *
-    background-color: #c7d8ff;
-    padding-top: 50px;
-    margin-left: -250px;  
-    margin-top: -100px; 
-}*/
 
-/* Modal Content/Box */
-.modal-content {
+/* joinus Content/Box */
+.joinus-content {
     background-color: #fefefe;
     margin: 2% auto 2% auto;
-    /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
+    border-radius: 16px;
     width: 50%;
     font-family: Arial, Helvetica, sans-serif
-        /* Could be more or less, depending on screen size */
 }
 
-/* Style the horizontal ruler */
+/* Style for horizontal ruler */
 hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
@@ -722,14 +544,12 @@ hr {
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width:720px) {
 
-    .modal-content {
+    .joinus-content {
         background-color: #fefefe;
-        margin: 2% auto 2% auto;
-        /* 5% from the top, 15% from the bottom and centered */
+        margin: 12% auto 2% auto;
         border: 1px solid #888;
         width: 85%;
         font-family: Arial, Helvetica, sans-serif
-            /* Could be more or less, depending on screen size */
     }
 
     .cancelbtn,
@@ -740,13 +560,11 @@ hr {
 
 @media screen and (min-width: 721px) and (max-width:1200px) {
 
-    .modal-content {
+    .joinus-content {
         background-color: #fefefe;
-        margin: 2% auto 2% auto;
-        /* 5% from the top, 15% from the bottom and centered */
+        margin: 15% auto 2% auto;
         border: 1px solid #888;
         width: 70%;
         font-family: Arial, Helvetica, sans-serif
-            /* Could be more or less, depending on screen size */
     }
 }
