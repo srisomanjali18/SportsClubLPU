@@ -309,6 +309,22 @@ div.desc {
 
     }
 
+    .responsive {
+        margin-top: 10px;
+        padding: 0 6px;
+        float: right;
+        width: 25%;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .responsive {
+        margin-top: 10px;
+        padding: 0 6px;
+        float: right;
+        width: 25%;
+    }
 }
 
 /*Small screens - tablets*/
@@ -389,7 +405,7 @@ div.desc {
         grid-row-gap: 10px;
     }
 
-    
+
 
     .product-right-side-2 {
         height: 540px !important;
@@ -495,7 +511,7 @@ div.desc {
         flex-direction: column;
     }
 
-    
+
 
     .product-right-side-2 {
         height: 350px !important;
