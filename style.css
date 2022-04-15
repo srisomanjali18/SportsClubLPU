@@ -209,6 +209,10 @@ div.event-gallery img {
         width: 49.99999%;
         margin: 6px 0;
     }
+
+    .card{
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -260,13 +264,17 @@ div.event-gallery img {
         width: 30%;
     }
 
+    .card{
+        height: auto;
+    }
+
 }
 
 /*Small screens - tablets*/
 @media screen and (min-width:481px) and (max-width: 768px) {
     .about-us-container {
         width: 90%;
-        margin: auto
+        margin: auto;
     }
 
     .about-us-text {
@@ -343,7 +351,7 @@ div.event-gallery img {
         border-radius: 10px;
         margin: 15px;
         background-color: white;
-        height: 400px;
+        height: auto;
         box-shadow: 2px 7px 20px -5px rgba(0, 0, 0, 0.57);
         -webkit-box-shadow: 2px 7px 20px -5px rgba(0, 0, 0, 0.57);
         -moz-box-shadow: 2px 7px 20px -5px rgba(0, 0, 0, 0.57);
