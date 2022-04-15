@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <title>Sports Club LPU</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
 </head>
 
 <body>
@@ -22,8 +26,6 @@
           href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#top" class="w3-bar-item w3-button w3-padding-large ">Sports Club LPU</a>
         <span class="w3-right">
-
-
           <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Home</a>
           <a href="#activities" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Activities</a>
           <a href="#events" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Events</a>
@@ -36,7 +38,8 @@
 
     <!-- Navbar on small screens -->
 
-    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <div id="nav-on-smallScr" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+      style="margin-top:46px">
       <a href="#home" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
       <a href="#activities" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Activities</a>
       <a href="#events" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Events</a>
@@ -54,7 +57,6 @@
             "You were born to be a player. You were meant to be here. This moment is yours." —Herb Brooks
           </p>
           <br>
-
           <div id="social-links" class="w3-text-white l " style="margin-top:20px">
             <p>Follow us on Social media</p>
             <div style="margin-top:10px">
@@ -67,14 +69,15 @@
             </div>
           </div>
           <a href="#joinus" class="w3-text-black ">
-            <button class="w3-text-white w3-medium w3-round w3-red w3-btn w3-margin-top  "
-              onclick="document.getElementById('id01').style.display='block'" style="width: 100px; height: 50px;">Join
-              Us
-            </button>
+            <div class="clearfix">
+              <button class="w3-text-white w3-medium w3-round w3-red w3-btn w3-margin-top  "
+                onclick="document.getElementById('id01').style.display='block'" style="width: 100px; height: 50px;">Join
+                Us
+              </button>
+            </div>
 
             <div style="padding-left: 50px;">
               <div id="id01" class="modal">
-
                 <form class="joinus-content" action="/action_page.php">
                   <span onclick="document.getElementById('id01').style.display='none'" class="close"
                     title="Close Form">&times;</span>
@@ -120,12 +123,9 @@
 
   <!-- Activities -->
   <section style="user-select: auto;">
-
     <div class="products" style="user-select: auto;">
-
       <div id="activities" class="w3-container  " style="user-select: auto; margin: top 10px;">
         <h2 class="section-text-header" style="user-select: auto;">Activities </h2>
-
 
         <!-- Carousel -->
         <div id="switch" class="carousel slide" data-bs-ride="carousel">
@@ -316,7 +316,6 @@
             </a>
           </div>
         </div>
-
         <div class="responsive">
           <div class="gallery">
             <a target="_blank" href="img/g2.jpg">
@@ -372,8 +371,6 @@
 
   <!-- About Us -->
   <div class="w3-flat-midnight-blue" style="margin-top: 40px; padding: 50px 0px;" id="aboutus">
-
-
     <div class="about-us-container">
       <div class="w3-text-black" style="display: flex;justify-content: space-evenly;flex-wrap: wrap;">
         <div class="card">
@@ -395,7 +392,6 @@
         </div>
       </div>
     </div>
-
   </div>
 
   <br>
@@ -403,7 +399,6 @@
     <div class=" w3-left-align w3-margin-top contact-info ">
       <h3 style="font-weight: 800;" class="contact-head">GET IN TOUCH</h3>
       <h4 style="font-weight: 600;">Follow Us </h4>
-
       <i class="fa fa-facebook-official w3-hover-opacity icons"></i>
       <i class="fa fa-instagram w3-hover-opacity icons"></i>
       <i class="fa fa-snapchat w3-hover-opacity icons"></i>
@@ -430,14 +425,13 @@
     </div>
   </div>
 
-
   <div class="w3-flat-midnight-blue w3-padding w3 w3-center w3-margin-top">
     <p>Sports Club LPU © Sri Somanjali and Abhinav Aditya</p>
   </div>
 
   <script>
     function myFunction() {
-      var x = document.getElementById("navDemo");
+      var x = document.getElementById("nav-on-smallScr");
       if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
       } else {
