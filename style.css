@@ -470,14 +470,15 @@ input[type=password]:focus {
 
 /* style for all buttons */
 button {
-    background-color: #04AA6D;
+    background-color: #555656;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 1;
+    width: 1px;
     opacity: 0.9;
+    border-radius: 16px;
 }
 
 button:hover {
@@ -493,8 +494,8 @@ button:hover {
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn,
 .signupbtn {
-    float: left;
-    width: 50%;
+    float:left;
+    width: 49.5%;
 }
 
 /* Add padding to container elements */
@@ -547,6 +548,7 @@ hr {
     content: "";
     clear: both;
     display: table;
+    justify-content: center;
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
