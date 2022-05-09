@@ -76,13 +76,12 @@
 
             <div style="padding-left: 50px;">
               <div id="id01" class="modal">
-                <form class="joinus-content" action="/action_page.php">
+                <form class="joinus-content" action="/aconnection.php" method="post">
                   <span onclick="document.getElementById('id01').style.display='none'" class="close"
                     title="Close Form">&times;</span>
                   <div class="container">
                     <h1>Join Us</h1>
                     <p>Please fill this form to join.</p>
-                    <hr>
 
                     <label for="name"><b>Name</b></label>
                     <input type="text" placeholder="Enter Name" name="Name" required>
@@ -91,10 +90,10 @@
                     <input type="text" placeholder="Enter Email" name="email" required>
 
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Create Password" name="psw" required>
+                    <input type="password" placeholder="Create Password" name="pwd" required>
 
                     <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Enter Password again" name="psw-repeat" required>
+                    <input type="password" placeholder="Enter Password again" name="cpwd" required>
 
                     <label>
                       <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -116,13 +115,12 @@
         </div>
       </div>
     </div>
-    </div>
   </main>
 
   <!-- Activities -->
   <section style="user-select: auto;">
     <div class="products" style="user-select: auto;">
-      <div id="activities" class="w3-container  " style="user-select: auto; margin: top 10px;">
+      <div id="activities" class="w3-container" style="user-select: auto; margin: top 10px;">
         <h2 class="section-text-header" style="user-select: auto;">Activities </h2>
 
         <!-- Carousel -->
