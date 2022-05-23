@@ -38,7 +38,7 @@ path {
     stroke: #FFF;
     fill: #fff;
     stroke-dasharray: 1550;
-    opacity: 50;
+    opacity: 10;
     animation: animate 3s cubic-bezier(0, 0.23, 1, .1);
 }
 
@@ -50,7 +50,7 @@ path {
     }
 
     30% {
-        opacity: 50;
+        opacity: 10;
         fill: none;
         stroke-dashoffset: 1550;
     }
@@ -60,7 +60,7 @@ path {
     }
 
     100% {
-        opacity: 20;
+        opacity: 10;
         fill: rgba(255, 255, 255, 255, 1);
         stroke-dashoffset: 0;
     }
