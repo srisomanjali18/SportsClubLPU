@@ -7,10 +7,63 @@ html {
     padding: 0;
 }
 
-#social-links a {
+#social-links {
     color: rgb(233, 243, 233);
     background-color: transparent;
     text-decoration: none;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    position: relative;
+    margin: 0px;
+    height: 350px;
+    width: 700px;
+    top: 160px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+path {
+    stroke: #FFF;
+    fill: #fff;
+    stroke-dasharray: 1550;
+    opacity: 50;
+    animation: animate 3s cubic-bezier(0, 0.23, 1, .1);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1550;
+    }
+
+    30% {
+        opacity: 50;
+        fill: none;
+        stroke-dashoffset: 1550;
+    }
+
+    90% {
+        fill: rgba(255, 255, 255, 255, 0);
+    }
+
+    100% {
+        opacity: 20;
+        fill: rgba(255, 255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
 }
 
 .hero-section {
@@ -34,14 +87,17 @@ html {
     border-radius: 30px !important;
 }
 
-.hero-section-into-text h1 {
-    font-size: 60px !important;
+.main-title {
+    font-size: 80px !important;
     letter-spacing: 2px;
     font-weight: 800;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: 'Laila', sans-serif;
+    padding: -10px;
 }
 
 .hero-section-into-text p {
+    font-size: 20px !important;
     width: 40%;
     letter-spacing: 1px;
 }
@@ -186,6 +242,16 @@ div.event-gallery img {
         background-repeat: no-repeat;
     }
 
+    .main-button {
+        top: 72%;
+        left: 50%;
+    }
+
+    .wrapper {
+        height: 300px;
+        width: 450px;
+    }
+
     .products {
         width: 90% !important;
     }
@@ -275,6 +341,16 @@ div.event-gallery img {
     .about-us-container {
         width: 90%;
         margin: auto;
+    }
+
+    .main-button {
+        top: 72%;
+        left: 50%;
+    }
+
+    .wrapper {
+        height: 280px;
+        width: 350px;
     }
 
     .about-us-text {
@@ -368,6 +444,16 @@ div.event-gallery img {
         height: 400px;
     }
 
+    .main-button {
+        top: 72%;
+        left: 50%;
+    }
+
+    .wrapper {
+        height: 250px;
+        width: 280px;
+    }
+
     .hero-section {
         margin-top: 50px;
         background-image: url("img/main-bg.jpg") !important;
@@ -450,7 +536,6 @@ div.event-gallery img {
 
 /* Full-width input fields */
 
-
 input[type=text],
 input[type=password] {
     width: 100%;
@@ -494,7 +579,7 @@ button:hover {
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn,
 .signupbtn {
-    float:left;
+    float: left;
     width: 49.5%;
 }
 
@@ -505,6 +590,7 @@ button:hover {
 }
 
 .container h1 {
+    font-size: 50px;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
